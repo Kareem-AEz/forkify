@@ -42,7 +42,7 @@ class RecipeView extends View {
         <div class="recipe__details">
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="${icons}#icon-clock"></use>
+              <use xlink:href="${icons}#icon-clock"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--minutes">${
               recipe.cookingTime
@@ -51,7 +51,7 @@ class RecipeView extends View {
           </div>
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="${icons}#icon-users"></use>
+              <use xlink:href="${icons}#icon-users"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--people">${
               recipe.servings
@@ -63,14 +63,14 @@ class RecipeView extends View {
                 recipe.servings - 1
               }">
                 <svg>
-                  <use href="${icons}#icon-minus-circle"></use>
+                  <use xlink:href="${icons}#icon-minus-circle"></use>
                 </svg>
               </button>
               <button class="btn--tiny btn--update-servings" data-servings="${
                 recipe.servings + 1
               }">
                 <svg>
-                  <use href="${icons}#icon-plus-circle"></use>
+                  <use xlink:href="${icons}#icon-plus-circle"></use>
                 </svg>
               </button>
             </div>
@@ -80,14 +80,14 @@ class RecipeView extends View {
             ${
               recipe.key
                 ? `<svg>
-              <use href="${icons}#icon-user"></use>
+              <use xlink:href="${icons}#icon-user"></use>
             </svg>`
                 : ''
             }
           </div>
           <button class="btn--round">
             <svg class="">
-              <use href="${icons}#icon-bookmark${
+              <use xlink:href="${icons}#icon-bookmark${
       recipe.bookmarked ? '-fill' : ''
     }"></use>
             </svg>
@@ -117,7 +117,7 @@ class RecipeView extends View {
           >
             <span>Directions</span>
             <svg class="search__icon">
-              <use href="${icons}#icon-arrow-right"></use>
+              <use xlink:href="${icons}#icon-arrow-right"></use>
             </svg>
           </a>
         </div>
@@ -129,7 +129,7 @@ class RecipeView extends View {
       return `
             <li class="recipe__ingredient">
              <svg class="recipe__icon">
-               <use href="${icons}#icon-check"></use>
+               <use xlink:href="${icons}#icon-check"></use>
              </svg>
              <div class="recipe__quantity">${
                item.quantity ? fracty(item.quantity) : ''
