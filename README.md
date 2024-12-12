@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd87a029-10ad-4ef8-9ed6-e42d74cc7039/deploy-status)](https://app.netlify.com/sites/forkiiffyy/deploys)
+
 # 🌦 Forkify: A Recipe Search and Bookmarking App
 
 **Forkify** is a JavaScript-powered recipe application that allows users to search, view, bookmark, and add their own recipes. Built with modern JavaScript features and following the MVC architecture pattern.
