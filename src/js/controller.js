@@ -136,6 +136,10 @@ const controlAddRecipe = async data => {
   }
 };
 
+const newFeature = () => {
+  console.log('Welcome to the application!');
+};
+
 // init
 (() => {
   // recipe
@@ -155,5 +159,5 @@ const controlAddRecipe = async data => {
   // add recipe
   addRecipeView.addHandlerUpload(controlAddRecipe);
 
-  console.log('init');
+  newFeature();
 })();
